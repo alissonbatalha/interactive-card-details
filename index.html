@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./css/style.css">
+  
+  <title>Interactive card details form</title>
+
+</head>
+<body>
+
+  <main>
+
+   <section class="card-session">
+
+    <div id="card-back">
+     <span class="card-back__code">000</span>
+    </div> <!--  card-back-->
+
+    <div id="card-front">
+      <img src="./images/card-logo.svg" alt="card's front logo" class="card-front__logo">
+      <span class="card-front__number">0000  0000  0000  0000</span>
+      <div class="card-front__footer">
+        <span class="card-front__name">Alisson Batalha</span>
+        <span class="card-front__expire">00/00</span>
+      </div>
+    </div> <!-- card-front -->
+    
+   </section> <!-- card-session -->
+
+   <section class="form-session">
+  
+     <div class="complete-session hidden">
+      <img src="./images/icon-complete.svg" alt="complete's icon">
+      <h2>THANK YOU!</h2>
+      <P>We've added your card details</P>
+      <button class="confirm">Continue</button>
+     </div> <!-- complete-session -->
+
+    <form>
+
+      <div class="form-session__name center">
+        <label for="name">Cardholder Name</label>
+        <input type="text" name="name" id="name" placeholder="e.g. Jane Appleseed" required>
+      </div> <!-- form-session__name -->
+
+      <div class="form-session__number center">
+        <label for="name">Card Number</label>
+        <input type="number" name="card-number" id="card-number" placeholder="e.g. 1234 5678 9123 0000" minlength="12" maxlength="12" required >
+      </div> <!-- form-session__number -->
+
+      <div class="form-session__footer center">
+        
+        <div class="form-session__expire">
+          <label for="expire">Exp. Date (MM/YY)</label><br>
+          <div>
+            <input type="number" name="card-month" id="card-month" placeholder="MM" required>
+            <input type="number" name="card-year" id="card-year" placeholder="YY" required>
+          </div>
+        </div> <!-- form-session__expire -->
+
+          <div class="form-session__cvc">
+            <label for="cvc">CVC</label>
+            <input type="number" name="card-number" id="card-number" placeholder="e.g. 123">
+          </div> <!-- form-session__cvc -->   
+
+      </div> <!-- form-session__footer -->
+
+      <button class="confirm">Confirm</button>
+
+    </form>
+   </section> <!-- form-session -->
+
+  </main>
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.io/alissonbatalha">Alisson Batalha</a>.
+  </footer>
+
+  <script src="./js/script.js"></script>
+
+</body>
+</html>
