@@ -33,6 +33,8 @@ function showCardNumbers () {
   let part4 = cardNumberInput.value.substring(12, 16);
 
   cardFrontNumber.innerHTML = `${part1} ${part2} ${part3} ${part4}`;
+
+	showCardFlag();
 }
   
 function showCardName () {
