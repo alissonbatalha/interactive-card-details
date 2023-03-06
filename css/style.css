@@ -87,6 +87,13 @@ main {
   width: 70px;
 }
 
+.card-front__flag {	
+  position: absolute;	
+  top: 10%;	right: 5%;		
+  display: none;		
+  width: 25%;
+}
+
 .card-front__number {
   position: absolute;
   top: 50%;
